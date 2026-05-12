@@ -1,0 +1,24 @@
+snowwhite_suite/
+├── .github/
+│   └── workflows/
+│       └── ci.yml              # Skonfigurowany pipeline GitHub Actions
+├── src/
+│   └── snowwhite_suite/
+│       ├── __init__.py
+│       ├── modele.py           # Wspólne struktury @dataclass (Krawedz, Wierzcholek itd.)
+│       ├── modul1_mcmf.py      # Przydział krasnoludków (algorytm SSP)
+│       ├── modul2_hull.py      # Wyznaczenie trasy patrolu (Otoczka wypukła)
+│       ├── modul3_rmq.py       # Wyszukiwanie najgłośniejszego dekametrowca (Drzewo Przedziałowe)
+│       ├── modul4_huffman.py   # Kompresja tekstu i wyszukiwanie (Huffman + Trie)
+│       └── integracja.py       # Główny skrypt uruchamiający moduły sekwencyjnie
+├── testy/
+│   ├── __init__.py
+│   ├── generator.py            # Generator losowych krasnoludków, wyrobisk i zapytań
+│   ├── test_modul1.py
+│   ├── test_modul2.py
+│   ├── test_modul3.py
+│   ├── test_modul4.py
+│   └── test_integracja.py      # Sprawdzenie poprawności przepływu danych między modułami
+├── pyproject.toml              # Konfiguracja projektu, linterów i zależności
+├── README.md                   # Opis projektu dla prowadzącego
+└── dokumentacja.pdf            # Końcowa dokumentacja projektu	
